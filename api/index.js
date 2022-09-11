@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import SpotifyWebApi from 'spotify-web-api-node';
-import cors from 'cords'
+import cors from 'cors'
 
 dotenv.config();
 
