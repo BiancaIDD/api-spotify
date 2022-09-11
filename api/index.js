@@ -1,10 +1,14 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import SpotifyWebApi from 'spotify-web-api-node';
+import cors from 'cords'
 
 dotenv.config();
 
 const api = express();
+api.use(
+  cors({origin: true})
+)
 
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.CLIENT_ID,
